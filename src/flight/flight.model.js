@@ -30,7 +30,9 @@ const Flight = sequelize.define('flights', {
         field: "departure_time"
     },
     checkIn:{
-        type:DataTypes.DATE
+        type:DataTypes.DATE,
+        allowNull: true,
+        field: "check_in"
     },
     status: {
         type: DataTypes.ENUM("pending","inProgress","done","cancelled","delayed"),

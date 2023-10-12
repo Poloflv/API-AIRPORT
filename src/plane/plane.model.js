@@ -17,6 +17,10 @@ const Plane = sequelize.define('plane', {
         type: DataTypes.STRING(20),
         allowNull: false
     },
+    capacity:{
+        type: DataTypes.INTEGER,
+        allowNull:false
+    },
     airline: {
         type: DataTypes.ENUM("AeroGlobe", "AeroTronix","VelocityAir","AirQuest","StartLink")
     },
